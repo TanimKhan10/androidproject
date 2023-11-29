@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.telephony.ClosedSubscriberGroupInfo;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -15,10 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        android.widget.EditText username = (android.widget.EditText) findViewById(R.id.editTextText);
-        android.widget.EditText password = (android.widget.EditText) findViewById(R.id.editTextTextPassword);
-        MaterialButton loginbtn = (MaterialButton) findViewById(R.id.button);
-        loginbtn.setOnClickListener(new View.OnClickListener(){
+
+
+        Button loginbttn = (Button) findViewById(R.id.loginbuton);
+        Button continuebtn = (Button) findViewById(R.id.continuebtn);
+        loginbttn.setOnClickListener(new View.OnClickListener(){
 
 
             @Override
@@ -27,11 +28,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        continuebtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Opencontinuepage();
+            }
+        });
 
+
+    }
+
+    public void Opencontinuepage(){
+        Intent intent;
+        intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
     }
     public void Openloginpage(){
         Intent intent;
-        intent = new Intent(this, MainActivity2.class);
+        intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 }

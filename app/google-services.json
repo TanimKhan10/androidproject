@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "394930280577",
+    "project_id": "august-craft-329114",
+    "storage_bucket": "august-craft-329114.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394930280577:android:34ed86fa6bcc2009115580",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCnnOt1vHJPcgXUiZTx-NIevPrKdegRmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394930280577:android:325ba83beb20d852115580",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCnnOt1vHJPcgXUiZTx-NIevPrKdegRmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
